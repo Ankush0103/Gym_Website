@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pehelwan's Fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body{
+        font-family: 'Rubik Beastly', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('image/womanexercise.jpg');
+    }
+    .left{
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 40px;
+        top: 20px;
+    }
+    .left img{
+        width: 170px;
+        /*filter: invert(100%);*/ /*inverts the color of image */
+    }
+    .left div{
+        line-height: 19px;
+        font-size: 21px;
+        text-align: center;
+    }
+    .mid{
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+        /* border: 2px solid green; */
+    }
+    .right{
+        position:absolute; /* Sets according to its parent i.e header */
+        right:34px;
+        top:20px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none; /* remove lines under .navbar li a elements */
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover, .navbar li a.active{
+        color : grey;
+        text-decoration: underline; /* make lines under .navbar li a elements */
+    }
+    
+    .btn{
+        font-family: 'Rubik Beastly', cursive; 
+        /* btn class didn't inherit font family of body because it had already font family aerial as default*/  
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        text-align: center;
+    }
+    .btn:hover{
+        background-color: rgb(181, 52, 52);
+    }
+    .container{
+        border: 2px solid white;
+        margin: 118px 35px;
+        padding: 51px 31px;
+        width: 30%;
+        border-radius: 20px;
+        font-size: 13px;
+        text-align: center;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 454px;
+        padding: 6px;
+        border: 2px solid black;
+        margin: 3px auto;
+        font-size: 20px;
+        border-radius: 8px;
+    }
+    .container h1{
+        text-align: center; /* another method to centre*/
+    }
+    .container button{
+        display: block;
+        width: 103%;
+        margin: auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- Left box gor logo -->
+        <div class="left">
+            <img src="image/manexercise.jpg" alt="">
+            <div>Pehelwan Fitness</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href = "#" class="active">Home</a></li>
+                <li><a href = "#">About Us</a></li>
+                <li><a href = "#">Fitness Calculator</a></li>
+                <li><a href = "#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+        <div class="container">
+            <h1>Join the Fittest GYM of Kolkata Now!</h1>
+            <form action = "noaction.php" target="_blank">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Age">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Gender">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Locality">
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </header>
+</body>
+</html>
